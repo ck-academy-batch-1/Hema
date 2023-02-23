@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            background-image: url("clean.jpg");
+        }
+        
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: none;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        h1::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        
+        .content form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+        
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+        
+        form .input-box span.details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 35px;
+            padding-left: 15px;
+            border: 1px solid whitesmoke;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            background: none;
+        }
+        
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid {
+            border-color: #9b59b6;
+        }
+        
+        form select {
+            height: 57%;
+            border-radius: 35px;
+            border: 1px solid whitesmoke;
+            color: none;
+            font-size: 18px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: none;
+        }
+        
+        form select:focus,
+        form select:valid {
+            border-color: white;
+        }
+        
+        form .button {
+            height: 45px;
+            margin: 35px 0;
+        }
+        
+        form .button input {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        
+        input {
+            border-radius: 30%;
+        }
+        
+        form .button input:hover {
+            background: linear-gradient(-135deg, #bde98a, #033a15);
+        }
+        
+         ::placeholder {
+            color: black;
+        }
+        
+        option {
+            color: black;
+            font-weight: bolder;
+        }
+        
+        @media(max-width: 584px) {
+            .container {
+                max-width: 100%;
+            }
+            form .user-details .input-box {
+                margin-bottom: 25px;
+                width: 100%;
+            }
+            .content form .user-details {
+                max-height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Here</h1>
+        <div class="content">
+            <form>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mobile Number</span>
+                        <input type="text" placeholder="Enter your mobile No" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Service Date</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Service Time</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Street</span>
+                        <input type="text" placeholder="Enter your Street" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City</span>
+                        <input type="text" placeholder="Enter your city" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">District</span>
+                        <input type="text" placeholder="Enter your District" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Landmark</span>
+                        <input type="text" placeholder="Enter your Landmark" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Pincode</span>
+                        <input type="text" placeholder="Enter your pincode" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Place</span>
+                        <select id="sel" name="ref" style="width: 100%;  margin-bottom: 15px;  font: size 100px;">
+                            <option>Select Option</option>
+                            <option>Home</option>
+                            <option>Company</option>
+                            <option>Reference</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <input type="submit" value="Book Now">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

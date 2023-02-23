@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="vh.css">
+    <!--icon link-->>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--bootstrap-link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: #4b4b4b;">
+    <header>
+        <div class="nav">
+
+            <a href="#" class="logo">
+                <img src="clasic cleaning.png" alt="" style="width:45px;">
+                <ion-icon name="services"></ion-icon>
+                SELECT AND BOOK ANY SERVICE, BELOW
+            </a>
+
+            <div class="box">
+                <div class="cart-count">0</div>
+                <ion-icon name="cart" id="cart-icon"></ion-icon>
+            </div>
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                </div>
+
+
+ <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+
+                <button class="btn-buy"><a href="Form.html" style="color: white; text-decoration: none;">
+                    Place Order</button></a>
+                <ion-icon name="close" id="cart-close"></ion-icon>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="title">OUR SERVICE</h2>
+        <div class="shop-content">
+
+
+            <div class="cln-box">
+                <div class="pic">
+                    <img src="cln3.jpg" class="cln-img">
+                </div>
+                <h2 class="cln-title">Basic Home Cleaning</h2>
+                <span class="cln-price">Rs.200</span>
+                <button class="stretched-link" id="chn" onclick="change()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change() {
+                    document.getElementById("chn").innerHTML = "Booked";
+                    document.getElementById("chn").style.backgroundColor = "green";
+                }
+            </script>
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln4.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Clasic Home Cleaning</h2>
+                <span class="cln-price">Rs.300</span>
+                <button class="stretched-link" id="chn1" onclick="change1()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change1() {
+                    document.getElementById("chn1").innerHTML = "Booked";
+                    document.getElementById("chn1").style.backgroundColor = "green";
+                }
+            </script>
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln6.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Bathroom Cleaning</h2>
+                <span class="cln-price">Rs.200</span>
+                <button class="stretched-link" id="chn2" onclick="change2()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change2() {
+                    document.getElementById("chn2").innerHTML = "Booked";
+                    document.getElementById("chn2").style.backgroundColor = "green";
+                }
+            </script>
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln8.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Indiantype Toilet Cleaning</h2>
+                <span class="cln-price">Rs.150</span>
+                <button class="stretched-link" id="chn3" onclick="change3()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change3() {
+                    document.getElementById("chn3").innerHTML = "Booked";
+                    document.getElementById("chn3").style.backgroundColor = "green";
+                }
+            </script>
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln10.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Westerntype Toilet Cleaning</h2>
+                <span class="cln-price">Rs.350</span>
+                <button class="stretched-link" id="chn4" onclick="change4()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change4() {
+                    document.getElementById("chn4").innerHTML = "Booked";
+                    document.getElementById("chn4").style.backgroundColor = "green";
+                }
+            </script>
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln5.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Sink Cleaning</h2>
+                <span class="cln-price">Rs.500</span>
+                <button class="stretched-link" id="chn5" onclick="change5()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change5() {
+                    document.getElementById("chn5").innerHTML = "Booked";
+                    document.getElementById("chn5").style.backgroundColor = "green";
+                }
+            </script>
+
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln1.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Tank Cleaning</h2>
+                <span class="cln-price">Rs.250</span>
+                <button class="stretched-link" id="chn6" onclick="change6()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change6() {
+                    document.getElementById("chn6").innerHTML = "Booked";
+                    document.getElementById("chn6").style.backgroundColor = "green";
+                }
+            </script>
+
+
+            <div class="cln-box">
+                <div class="pic"><img src="cln4.jpg" class="cln-img"></div>
+                <h2 class="cln-title">Plumbing Service</h2>
+                <span class="cln-price">Rs.255</span>
+                <button class="stretched-link" id="chn7" onclick="change7()">Add to Cart</button>
+            </div>
+
+            <script>
+                function change7() {
+                    document.getElementById("chn7").innerHTML = "Booked";
+                    document.getElementById("chn7").style.backgroundColor = "green";
+                }
+            </script>
+        </div><br><br>
+
+        <div style="text-align: end;">
+            <p style="color:white; font-size: small;">L&D by Hemalatha & Vennila @ HEPL CK Academy</p>
+        </div>
+
+        <script src="vh.js"></script>
+</body>
+
+</html>
