@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<head>
+<title>FORM</title>
+    
+  
+    <style>
+        input{
+            border-radius: 8px;
+    
+        }
+
+      .form-group {
+        margin-top: 40px;
+      }
+      body{
+        margin-left:70px ; 
+       
+      }
+      .form-control {
+  width: 80%;
+}
+ </style>
+  </head>
+  <body style="background-color: rgb(138, 214, 208);" > 
+    <div class="container"  >
+      <form id="p1"  class="was-validated">
+       <label></label>
+        <input type="search"  placeholder="search" id="search" class="form-control" >
+      </div>
+ 
+        <div class="form-group"    >
+          <label>Name:</label>
+          <input type="text"  placeholder="Enter name" id="name" class="form-control"  width="2px" >
+        </div>
+      
+        <div class="form-group">
+          <label>Email id:</label>
+          <input type="Email" id="Email" placeholder="hema@gmail.com" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="password" placeholder="Password" id="password" minlength="6" required class="form-control">
+        </div>
+        <div class="form-group" >
+           <label>DoB:</label>
+<input type="date" id="number"  placeholder="DOB" required class="form-control">
+<br> </div>
+<div class="form-group" >
+<label>phone number</label>
+<input type="tel"  placeholder="8124864878" pattern="[0-9]{10}"   id="pnum" required   class="form-control">
+</div>
+<div class="form-group" >
+<label>age:</label>
+<input type="number" min="18" max="25"  placeholder="age"  id="age" required  class="form-control"></div>
+         <div class="form-group" >
+
+            <label >Select your language:</label>
+        
+    <select  id="drop" name="drop"  placeholder="select lanuage" required  class="form-control">
+     
+       <option>Select language</option>
+      <option>Tamil</option>
+      <option>English</option>
+      <option>Hindi</option>
+      <option>Corea</option>
+     
+    </select>
+  </div>
+  <div class="form-group" class="form-control">
+    <label for="gender" id="gender" required >Gender:</label><br>
+            <input type="radio" name="gen" value="female" id="gen"> Female<br>
+            <input type="radio" name="gen" value="male"  id="gen"> Male<br>
+          </div>
+  
+  <div class="form-group"   >
+    <label>Any feedback:<label>
+      <textarea cols="27" rows="5" id="any" name="any"  required></textarea></div>
+      <br>
+
+
+        <div class="form-group" >
+          <label>url</label>
+ <input type="rose.jpg" id="url"  placeholder="link"   class="form-control" >
+  <br> </div>
+
+  <label>time:</label>
+<input type="time"  placeholder="time"  id="numb" required  class="form-control">
+</div>
+
+
+
+<label></label>
+<input type="hidden"  placeholder="hid" required  class="form-control">
+</div>
+
+
+<label>week</label>
+<input type="week"  placeholder="range"  id="rang" required   class="form-control">
+</div>
+
+
+<label>range</label>
+<input type="range"  placeholder="range"  id="rang" required  class="form-control">
+</div>
+<br><br>
+<label for="file">Resume:</label>
+  <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" class="form-control">
+  <br><br>
+
+
+<button type="submit" class="btn btn-primary" id="1" class="form-control">Submit</button>
+        <button type ="reset"value="reset"  class="btn btn-info">reset</button><br>
+      </form>
+    </div>
+     
+  </body>
+</html>
